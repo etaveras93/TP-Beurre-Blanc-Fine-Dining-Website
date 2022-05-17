@@ -11,8 +11,7 @@
 }
 
 body{
-    background-color: #b2ffff8a !important;
-    
+    background-color: #b2ffff1f !important;
 }
 
 .main-font{
@@ -26,3 +25,14 @@ body{
 .bold-text{
     font-weight: bold;
 }
+
+.w-100 {
+    width: 25% !important;
+    height: 75vh;
+  }
+
+.button-color{
+    background-color: #36454F !important;
+}
+
+
