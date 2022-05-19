@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
 .nav-color{
     background-color: #36454F !important;
 }
+
+.navfontcolor{
+    font-family: Beau Rivage;
+    color: aliceblue;
+}
+
+body{
+    background-color: #b2ffff1f !important;
+}
+
+.main-font{
+    font-family: Beau Rivage !important;
+}
+
+.common-font{
+    font-family: Quicksand !important;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.w-100 {
+    width: 25% !important;
+    height: 75vh;
+  }
+
+.button-color{
+    background-color: #36454F !important;
+}
+
+
