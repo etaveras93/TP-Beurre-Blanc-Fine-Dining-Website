@@ -32,21 +32,22 @@
   </nav>
   <div class="collapse" id="navbarToggleExternalContent3">
     <div class="bg-light shadow-3 p-4">
-      <a class="btn btn-link btn-block border-bottom m-0" href="menu.html">Menu</a>
-      <a class="btn btn-link btn-block border-bottom m-0" href="reservations.html">Reservations</a>
-      <a class="btn btn-link btn-block border-bottom m-0" href="order.html">Order Online</a>
-      <a class="btn btn-link btn-block m-0" href="contact.html">Contact Us</a>
+      <a class="btn btn-link btn-block border-bottom m-0 common-font" href="menu.html">Menu</a>
+      <a class="btn btn-link btn-block border-bottom m-0 common-font" href="reservations.html">Reservations</a>
+      <a class="btn btn-link btn-block border-bottom m-0 common-font" href="order.html">Order Online</a>
+      <a class="btn btn-link btn-block m-0 common-font" href="contact.html">Contact Us</a>
     </div>
   </div>
   <div class="card">
     <div class="card-body">
       <h1 class="card-title text-center main-font">Contact Information</h1>
-      <p class="card-text text-center bold-text">Address</p>
-        <p class="card-text text-center">123 John Doe st, WA, 17778</p>
-        <p class="card-text text-center bold-text">Phone Number</p>
-        <p class="card-text text-center">123-456-7890</p>
-        <p class="card-text text-center bold-text">Email Address</p>
-        <p class="card-text text-center">BeurreBlanc@gmail.com</p>
+
+      <p class="card-text text-center bold-text common-font">Address</p>
+        <p class="card-text text-center common-font">123 John Doe st, WA, 17778</p>
+        <p class="card-text text-center bold-text common-font">Phone Number</p>
+        <p class="card-text text-center common-font">123-456-7890</p>
+        <p class="card-text text-center bold-text common-font">Email Address</p>
+        <p class="card-text text-center common-font">BeurreBlanc@gmail.com</p>
     </div>
   </div>
 
@@ -67,10 +68,13 @@ Array.prototype.slice.call(forms)
     }, false)
   })
 -->
+
+<div id="content" class="container-fluid">
 <div class="container-fluid">
 <div class="card">
   <div class="card-body">
-    <p class="text-center"> If you have something important you would like to speak to us about please leave a comment down below!</p>
+    <p class="text-center common-font"> If you have something important you would like to speak to us about please leave a comment down below!</p>
+
 <form class="row g-3 needs-validation" novalidate="">
   <div class="col-md-4">
     <label for="validationCustom01" class="form-label">First name</label>
@@ -122,6 +126,9 @@ Array.prototype.slice.call(forms)
 </div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
+</div>
+
   <footer class="footer mt-auto py-3 fixed-bottom nav-color">
     <div class="container">
       <!-- Facebook -->
@@ -130,6 +137,7 @@ Array.prototype.slice.call(forms)
       <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
       <!-- Instagram -->
       <a class="btn btn-primary btn-floating m-1" style="background-color: #928c92" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
       <span class="text-muted">
         2022 Beurre Blanc
       </span>
