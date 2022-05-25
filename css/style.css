@@ -14,6 +14,7 @@ body{
     background-color: #b2ffff1f !important;
 }
 
+
 #content {
   background-image: url("bb_background.svg");
   background-repeat: repeat;
@@ -27,6 +28,7 @@ body{
 .common-font, #menu p, #menu h3{
     font-family: Quicksand !important;
     font-size: 1.25rem !important;
+
 }
 
 .bold-text{
@@ -41,6 +43,7 @@ body{
 .button-color{
     background-color: #36454F !important;
 }
+
 
 .btn-link {
   color: #616730 !important;
@@ -126,3 +129,4 @@ body{
     width: 100%;
     border: 4px solid #36454f;
   }
+
