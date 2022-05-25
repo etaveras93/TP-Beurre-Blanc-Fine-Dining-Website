@@ -32,13 +32,14 @@
   </nav>
   <div class="collapse" id="navbarToggleExternalContent3">
     <div class="bg-light shadow-3 p-4">
-      <a class="btn btn-link btn-block border-bottom m-0" href="menu.html">Menu</a>
-      <a class="btn btn-link btn-block border-bottom m-0" href="reservations.html">Reservations</a>
-      <a class="btn btn-link btn-block border-bottom m-0" href="order.html">Order Online</a>
-      <a class="btn btn-link btn-block m-0" href="contact.html">Contact Us</a>
+      <a class="btn btn-link btn-block border-bottom m-0 common-font" href="menu.html">Menu</a>
+      <a class="btn btn-link btn-block border-bottom m-0 common-font" href="reservations.html">Reservations</a>
+      <a class="btn btn-link btn-block border-bottom m-0 common-font" href="order.html">Order Online</a>
+      <a class="btn btn-link btn-block m-0 common-font" href="contact.html">Contact Us</a>
     </div>
   </div>
 
+<div id="content" class="container-fluid">
 <!-- Menu -->
 <section id="menu">
   <div class="container">
@@ -48,17 +49,17 @@
     </div>
   </div>
       <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'appetizers')" id="defaultOpen">Hors d'Oeuvre</button>
-          <button class="tablinks" onclick="openCity(event, 'entrees')">Entrées</button>
-          <button class="tablinks" onclick="openCity(event, 'desserts')">Desserts & Beverages</button>
-          <button class="tablinks" onclick="openCity(event, 'wines')">Wines</button>
-          <button class="tablinks" onclick="openCity(event, 'specials')">Specials</button>
+          <button class="tablinks common-font" onclick="openCity(event, 'appetizers')" id="defaultOpen">Hors d'Oeuvre</button>
+          <button class="tablinks common-font" onclick="openCity(event, 'entrees')">Entrées</button>
+          <button class="tablinks common-font" onclick="openCity(event, 'desserts')">Desserts & Beverages</button>
+          <button class="tablinks common-font" onclick="openCity(event, 'wines')">Wines</button>
+          <button class="tablinks common-font" onclick="openCity(event, 'specials')">Specials</button>
       </div>
 
       <!--Appetizers/Hors d'Oeuvre-->
-      <div id="appetizers" class="tabcontent">
+      <div id="appetizers" class="tabcontent px-sm-5 pb-5">
           <div class="container-fluid">
-              <h2 class="text-center">Hors d'Oeuvre</h2>
+              <h2 class="text-center main-font">Hors d'Oeuvre</h2>
               <div class="row">
                 <div class="col-md-6">
                   <div class="row">
@@ -173,10 +174,10 @@
 
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-sm-7">
+                        <div class="col-sm-5">
                           <h3>Les Huitres Fraiche</h3>
                         </div>
-                        <div class="col-sm-5">
+                        <div class="col-sm-7">
                           <p>$20 Half Dozen | $40 One Dozen</p>
                         </div>
                       </div>
@@ -235,9 +236,9 @@
       </div>
 
       <!--Entrees-->
-      <div id="entrees" class="tabcontent">
+      <div id="entrees" class="tabcontent px-sm-5 pb-5">
           <div class="container-fluid">
-              <h2 class="text-center">Entrées</h2>
+              <h2 class="text-center main-font">Entrées</h2>
               <div class="row">
                 <div class="col-md-6">
                   <div class="row">
@@ -358,9 +359,9 @@
       </div>
 
       <!--Desserts and Beverages-->
-      <div id="desserts" class="tabcontent">
+      <div id="desserts" class="tabcontent px-sm-5 pb-5">
           <div class="container-fluid">
-              <h2 class="text-center">Desserts</h2>
+              <h2 class="text-center main-font">Desserts</h2>
               <div class="row">
                 <div class="col-md-6">
                   <div class="row">
@@ -441,7 +442,7 @@
               </div>
 
           
-                <h2 class ="text-center">Beverages</h2>
+                <h2 class ="text-center main-font">Beverages</h2>
               <div class="row">
                   <div class="col-md-6">
                     <div class="row">
@@ -505,7 +506,7 @@
                   </div>
                 </div>
 
-                <h2 class ="text-center">Cocktails</h2>
+                <h2 class ="text-center main-font">Cocktails</h2>
               <div class="row">
                   <div class="col-md-6">
                     <div class="row">
@@ -597,9 +598,9 @@
   </div>
 
   <!--Wines-->
-  <div id="wines" class="tabcontent">
+  <div id="wines" class="tabcontent px-sm-5 pb-5">
       <div class="container-fluid">
-          <h2 class="text-center">White</h2>
+          <h2 class="text-center main-font">White</h2>
           <div class="row">
             <div class="col-md-6">
               <div class="row">
@@ -737,7 +738,7 @@
         </div>
         </div>
 
-        <h2 class="text-center">Red</h2>
+        <h2 class="text-center main-font">Red</h2>
           <div class="row">
             <div class="col-md-6">
               <div class="row">
@@ -894,7 +895,7 @@
         </div>
         </div>
 
-        <h2 class="text-center">Champagnes</h2>
+        <h2 class="text-center main-font">Champagnes</h2>
           <div class="row">
             <div class="col-md-6">
               <div class="row">
@@ -935,7 +936,7 @@
         </div>
         </div>
 
-        <h2 class="text-center">Sparkling</h2>
+        <h2 class="text-center main-font">Sparkling</h2>
           <div class="row">
             <div class="col-md-6">
               <div class="row">
@@ -980,10 +981,10 @@
 </div>
 
 <!--Specials-->
-<div id="specials" class="tabcontent">
+<div id="specials" class="tabcontent px-sm-5 pb-5">
 <div class="container-fluid">
-  <h2 class="text-center">Specials</h2>
-  <p class="text-center">Our specials are based on seasonal availability.</p>
+  <h2 class="text-center main-font">Specials</h2>
+  <p class="text-center pb-5">Our specials are based on seasonal availability.</p>
   <div class="row">
     <div class="col-md-6">
       <div class="row">
@@ -1078,6 +1079,7 @@
 </div>
 </div>
 </section>
+</div>
 
   <footer class="footer mt-auto py-3 nav-color">
     <div class="container">
@@ -1087,7 +1089,7 @@
       <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
       <!-- Instagram -->
       <a class="btn btn-primary btn-floating m-1" style="background-color: #928c92" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-      <span class="text-muted">
+      <span class="text-muted common-font">
         2022 Beurre Blanc
 
       </span>
