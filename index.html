@@ -12,13 +12,32 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
     <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/> 
     
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light nav-color">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/Restaurant-Logo.png" height="120" alt="logo">
+        <h1 class="navfontcolor">Beurre Blanc</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <a class="nav-link common-font text-white" href="menu.html">Menu</a>
+          <a class="nav-link common-font text-white" href="reservations.html">Reservations</a>
+          <a class="nav-link common-font text-white" href="order.html">Order Online</a>
+          <a class="nav-link common-font text-white" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
   <!-- Created the toggle navbar for the webpage -->
-  <nav class="navbar navbar-light nav-color">
+  <!--<nav class="navbar navbar-light nav-color">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="images/Restaurant-Logo.png" height="85" alt="logo">
@@ -30,23 +49,23 @@
         <i class="fas fa-bars"></i>
       </button>
     </div>
-  </nav>
+  </nav> -->
   <!-- I turned the buttons into links because I felt they work better that way -->
-  <div class="collapse" id="navbarToggleExternalContent3">
+ <!-- <div class="collapse" id="navbarToggleExternalContent3">
     <div class="bg-light shadow-3 p-4">
       <a class="btn btn-link btn-block border-bottom m-0 common-font" href="menu.html">Menu</a>
       <a class="btn btn-link btn-block border-bottom m-0 common-font" href="reservations.html">Reservations</a>
       <a class="btn btn-link btn-block border-bottom m-0 common-font" href="order.html">Order Online</a>
       <a class="btn btn-link btn-block m-0 common-font" href="contact.html">Contact Us</a>
     </div>
-  </div>
+  </div> -->
 
 
   <div class="container-fluid" id="content">
   <div class="container-xxl">
-    <div class="card">
+    <div class="card container-color">
       <div class="card-body text-center">
-        <h4 class="main-font" style="font-size:40px">Welcome to Beurre Blanc.</h4>
+        <h4 class="main-font" style="font-size:90px">Welcome to Beurre Blanc.</h4>
       </div>
     </div>
   
@@ -101,57 +120,126 @@
 
 
   <div class="mt-2">
-  <div class="container-sm">
-    <div class="card">
+  <div class="container-xxl">
+    <div class="card container-color">
       <div class="card-body">
         <h5 class="card-title main-font text-center" style="font-size: 30px;">Hours of Operation</h5>
-        <p class="card-text text-center bold-text">Monday - Thursday</p>
-        <p class="card-text text-center">4:00 pm - 8:00 pm</p>
-        <p class="card-text text-center bold-text">Friday</p>
-        <p class="card-text text-center">5:00 pm - 10:00 pm</p>
-        <p class="card-text text-center bold-text">Saturday & Sunday Brunch</p>
-        <p class="card-text text-center">10:00 am - 9:00 pm</p>
+        <p class="card-text common-font text-center bold-text">Monday - Thursday</p>
+        <p class="card-text common-font text-center">4:00 pm - 8:00 pm</p>
+        <p class="card-text common-font text-center bold-text">Friday</p>
+        <p class="card-text common-font text-center">5:00 pm - 10:00 pm</p>
+        <p class="card-text common-font text-center bold-text">Saturday & Sunday Brunch</p>
+        <p class="card-text common-font text-center">10:00 am - 9:00 pm</p>
       </div>
-    <div class="col text-center">
-    <a href="reservations.html"><button type="button" class="btn btn-secondary ms-5 bd-highlight d-inline-block button-color">Reserve A Table</button></a>
-    <a href="menu.html"><button type="button" class="btn btn-secondary ms-5 bd-highlight d-inline-block button-color">Menu</button></a>
+    <div class="col text-center ">
+    <a href="reservations.html"><button type="button" class="btn btn-secondary  bd-highlight d-inline-block button-color">Reserve A Table</button></a>
   <p>&nbsp;</p>
   </div>
     </div>
   </div>
 </div>
-<div class="mt-2">
-  <div class="container-sm">
-    <div class="card">
-      <div class="card-body">
-
-        <h5 class="card-title">What makes Beurre Blanc special?</h5>
-        <p class="card-text">We are a well established local fine dining restaurant since we open our doors in 1932. Come and enjoy our specialty french cuisine and our world class wine that we provide if all this sounds appetizing then make a reserveration we would love to see you there! </p>
-
-      </div>
-    </div>
+<div class="card text-center mt-2 ms-3 container-color" style="width: 79rem;">
+  <div class="container-xxl">
+  <div class="card-header common-font">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title fontbold common-font">What makes Beurre Blanc special?</h5>
+    <p class="card-text common-font">We are a well established local fine dining restaurant since we open our doors in 1932. Come and enjoy our specialty french cuisine and our world class wine that we provide if all this sounds appetizing then make a reserveration we would love to see you there! </p>
+    <a href="menu.html"><button type="button" class="btn btn-secondary bd-highlight d-inline-block button-color">menu</button></a>
+  </div>
+  <div class="card-footer text-muted common-font">
+    2 days ago
   </div>
 </div>
 </div>
+
+
+</div>
 </div>
 
 
-  <footer class="footer mt-auto py-3 nav-color">
-    <div class="container">
-      <!-- Facebook -->
-      <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-      <!-- Twitter -->
-      <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-      <!-- Instagram -->
-      <a class="btn btn-primary btn-floating m-1" style="background-color: #928c92" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-
-      <span class="text-muted">
-        2022 Beurre Blanc
-
-      </span>
+<footer class="text-center nav-color text-lg-start text-light common-font">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
     </div>
+    <!-- Left -->
 
-  </footer>
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Menu</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Reservations</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Order Online</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> 123 John Doe st, WA, 17778</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            BeurreBlanc@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 123 456 7890</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold common-font" href="">Beurre Blanc</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 
   </div>
 

@@ -130,3 +130,20 @@ body{
     border: 4px solid #36454f;
   }
 
+  .fontbold{
+    font-weight: bold !important;
+
+  }
+
+  a:hover{
+    color:#616730 !important;
+  }
+
+  a:active {
+    color: #36454F;
+  }
+.container-color{
+  background-color: #fffcfc;
+  /*background-image: url("images/brilliant.png");*/
+  background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
+}
