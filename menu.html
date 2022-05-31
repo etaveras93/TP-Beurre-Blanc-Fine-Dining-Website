@@ -16,7 +16,7 @@
     
 </head>
 
-<body>
+<body id="content">
   <nav class="navbar navbar-expand-lg navbar-light nav-color">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
@@ -58,8 +58,6 @@
     </div>
   </div>-->
 
-
-<div id="content" class="container-fluid">
 <!-- Menu -->
 <section id="menu">
   <div class="container">
@@ -68,16 +66,16 @@
       <h1 class="main-font">Our Menu</h1>
     </div>
   </div>
-      <div class="tab">
-          <button class="tablinks common-font" onclick="openCity(event, 'appetizers')" id="defaultOpen">Hors d'Oeuvre</button>
-          <button class="tablinks common-font" onclick="openCity(event, 'entrees')">Entrées</button>
-          <button class="tablinks common-font" onclick="openCity(event, 'desserts')">Desserts & Beverages</button>
-          <button class="tablinks common-font" onclick="openCity(event, 'wines')">Wines</button>
-          <button class="tablinks common-font" onclick="openCity(event, 'specials')">Specials</button>
+      <div class="tab rounded">
+          <button class="tablinks common-font" onclick="openMenu(event, 'appetizers')" id="defaultOpen">Hors d'Oeuvre</button>
+          <button class="tablinks common-font" onclick="openMenu(event, 'entrees')">Entrées</button>
+          <button class="tablinks common-font" onclick="openMenu(event, 'desserts')">Desserts & Beverages</button>
+          <button class="tablinks common-font" onclick="openMenu(event, 'wines')">Wines</button>
+          <button class="tablinks common-font" onclick="openMenu(event, 'specials')">Specials</button>
       </div>
 
       <!--Appetizers/Hors d'Oeuvre-->
-      <div id="appetizers" class="tabcontent px-sm-5 pb-5 container-color">
+      <div id="appetizers" class="tabcontent px-sm-5 pb-5 container-color rounded">
           <div class="container-fluid">
               <h2 class="text-center main-font">Hors d'Oeuvre</h2>
               <div class="row">
@@ -256,7 +254,7 @@
       </div>
 
       <!--Entrees-->
-      <div id="entrees" class="tabcontent px-sm-5 pb-5">
+      <div id="entrees" class="tabcontent px-sm-5 pb-5 container-color rounded">
           <div class="container-fluid">
               <h2 class="text-center main-font">Entrées</h2>
               <div class="row">
@@ -379,7 +377,7 @@
       </div>
 
       <!--Desserts and Beverages-->
-      <div id="desserts" class="tabcontent px-sm-5 pb-5">
+      <div id="desserts" class="tabcontent px-sm-5 pb-5 container-color rounded">
           <div class="container-fluid">
               <h2 class="text-center main-font">Desserts</h2>
               <div class="row">
@@ -618,7 +616,7 @@
   </div>
 
   <!--Wines-->
-  <div id="wines" class="tabcontent px-sm-5 pb-5">
+  <div id="wines" class="tabcontent px-sm-5 pb-5 container-color rounded">
       <div class="container-fluid">
           <h2 class="text-center main-font">White</h2>
           <div class="row">
@@ -1001,7 +999,7 @@
 </div>
 
 <!--Specials-->
-<div id="specials" class="tabcontent px-sm-5 pb-5">
+<div id="specials" class="tabcontent px-sm-5 pb-5 rounded">
 <div class="container-fluid">
   <h2 class="text-center main-font">Specials</h2>
   <p class="text-center pb-5">Our specials are based on seasonal availability.</p>
@@ -1098,9 +1096,11 @@
   </div>
 </div>
 </div>
-</section>
 </div>
+</section>
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 <footer class="text-center nav-color text-lg-start text-light common-font">
   <!-- Section: Social media -->
