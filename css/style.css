@@ -51,6 +51,11 @@ body{
 
 /*Menu Page*/
 
+#menu .card, #menu .tabcontent {
+  width: 98%;
+  margin: auto;
+}
+
 #menu .tab {
     display: flex;
     justify-content: space-evenly;
@@ -65,10 +70,15 @@ body{
 }
 
 @media all and (max-width: 767px) {
+  #menu .card, #menu .tabcontent {
+    width: 100%;
+  }
+
   #menu .tab {
     flex-direction: column;
   }
 }
+
 
 #menu h3 {
   font-weight: bolder;
