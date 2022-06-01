@@ -160,3 +160,86 @@ body{
   /*background-image: url("images/brilliant.png");*/
   background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
 }
+
+/* ------------Section for the reservation calendar------------ */
+.calendar{
+  margin: 20px;
+}
+
+/*changes the color of the navigation section of the calendar to stand out and mirror the site navigation*/
+.calendar .calendar-nav{
+  background-color: #36454f;
+  font-size: 40px;
+  color: aliceblue;
+}
+
+/*changes the box background to a darker color when hovering over the calendar arrows to show interactibility. But there is none at the moment*/
+.calendar .calendar-nav .arrow:hover{
+  background-color: #252f35;
+  cursor: pointer;
+}
+
+/*styles the days of the week row of the calendar*/
+.calendar .calendar-week{
+  background-color: #36454f22;
+  font-size: 1.5vm !important;
+}
+
+/*sets the font size of the dates, changes the height of the rows for the days, and makes the number centered within the grid*/
+.calendar .calendar-days{
+  font-size: 10vm;
+  height: 65vm;
+  line-height: 65vm;
+}
+
+.calendar .calendar-days .btn{
+  font-family: Quicksand !important;
+  font-size: 1.5vw !important;
+  margin-top: .5rem;
+}
+
+/*makes it so that days that can be reserved are highlighted when hovered over them. Also makes the curser switch to a pointer*/
+.calendar .calendar-days .open .btn:hover{
+  background-color: #23354033;
+}
+
+/*sets the days that aren't available for reservations to have a faded color. 
+These include days the store is closed, not open for reservations, a past day, or fully booked*/
+.calendar .calendar-days .not-open .btn{
+  color: #23354071;
+  background-color: #d8d8d8;
+}
+
+/*sets the color of the current day to be a ligher/more transparent celeste to set it apart*/
+.calendar .calendar-days .current .btn{
+  background-color: #d5f2f2ab;
+}
+
+/*makes it so that the current day darkens when hovered over*/
+.calendar .calendar-days .current .btn:hover{
+  background-color: #c7e0e0;
+}
+
+
+/*-------Modal reservation section-----------*/
+.reserve-btn{
+    background-color: #d5f2f2 !important;
+    color: #252f35 !important;
+}
+
+.modal-header{
+  font-family: Quicksand !important;
+}
+
+
+/*Sizing for screens for the calendar*/
+@media only screen and (max-width: 770px) {
+  .calendar .calendar-hide{
+    display: none;
+  }
+
+  .calendar-height{
+    height: 31rem !important;
+  }
+}
+

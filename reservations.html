@@ -57,6 +57,380 @@
       <a class="btn btn-link btn-block m-0 common-font" href="contact.html">Contact Us</a>
     </div>
   </div> -->
+
+  <!-- -----------------------Main content ------------------------- -->  
+  <main>
+    <!------------------Contact information for questions or if there is a party larger than------------->
+      <div class="container-fluid" id="content">
+        <div class="container-xxl">
+          <div class="card">
+            <div class="card-body text-center">
+              <h1 class="main-font">Reservations</h1>
+              <p class="card-title">Reserve a table through our calender or by contacting Beurre Blanc.</p>
+              <p class="card-text">Groups larger than 5 people are asked to contact us directly.</p>
+                <div class="col text-center">
+                  <a href="contact.html"><button type="button" class="btn btn-secondary  bd-highlight d-inline-block button-color">Contact Us</button></a>
+                </div>
+            </div>
+          </div>
+        </div>
+    <!------------------------Mock up of a calender api that will schedule reservations, this is to be replaced later once there is one built out---------------------->
+      <div class="mt-2">
+        <div class="container-xxl">
+          <div class="card text-center calendar-height">
+            <div class="container calendar">
+  
+              <!--month and arrows to navigate through the months (not actually navigatiable at the moment)-->
+              <div class="row calendar-nav">
+                <div class="col-2 left arrow">&#10094;</div>
+                <div class="col-8 main-font month">June</div>
+                <div class="col-2 right arrow">&#10095;</div>
+              </div>
+  
+              <!--This section has all the days of the week-->
+              <div class="row calendar-week calendar-hide">
+                <div class="col-sm">Su</div>
+                <div class="col-sm">Mo</div>
+                <div class="col-sm">Tu</div>
+                <div class="col-sm">We</div>
+                <div class="col-sm">Th</div>
+                <div class="col-sm">Fr</div>
+                <div class="col-sm">Sa</div>
+              </div>
+  
+              <!--This is the section for the month days, the first few will be from the previous month and are less saturated and not interactable. THe current day is also highlighted-->
+                <div class="row calendar-days">
+                  <div class="col-sm d-grid not-open"><button type="button" class="btn btn-block" disabled>29</button></div>
+                  <div class="col-sm d-grid not-open"><button type="button" class="btn btn-block" disabled>30</button></div>
+                  <div class="col-sm d-grid not-open"><button type="button" class="btn btn-block" disabled>31</button></div>
+  
+                  <!--for now reservations all go to the same form, but that is purely for display purposes only. It is planned to change once an actual app is deployed-->
+                  <div class="col-sm d-grid current open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">1</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">2</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#fri-reservation">3</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#end-reservation">4</button></div>
+                </div>
+  
+                <!--week 2-->
+                <div class="row calendar-days calendar-hide">
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#end-reservation">5</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">6</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">7</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">8</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">9</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#fri-reservation">10</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#end-reservation">11</button></div>
+                </div>
+  
+                <!--week 3-->
+                <div class="row calendar-days calendar-hide">
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#end-reservation">12</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">13</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">14</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">15</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">16</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#fri-reservation">17</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#end-reservation">18</button></div>
+                </div>
+  
+                <!--week 4-->
+                <div class="row calendar-days calendar-hide">
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#end-reservation">19</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">20</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">21</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">22</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">23</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#fri-reservation">24</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#end-reservation">25</button></div>
+                </div>
+  
+                <!--week 5, the last couple of days are not available to acess from this month-->
+                <div class="row calendar-days calendar-hide">
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#end-reservation">26</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">27</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">28</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">29</button></div>
+                  <div class="col-sm d-grid open"><button type="button" class="btn btn-block" data-bs-toggle="modal" data-bs-target="#week-reservation">30</button></div>
+                  <div class="col-sm d-grid not-open"><button type="button" class="btn btn-block" disabled>1</button></div>
+                  <div class="col-sm d-grid not-open"><button type="button" class="btn btn-block" disabled>2</button></div>
+                </div>
+              </div>
+            </div>
+  
+          <!----------Modal for reservations------------->
+          <!--Week days Monday through Thursday-->
+            <div class="modal" id="week-reservation">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+  
+                  <!-- Modal Header, sets up the title and exit cross button along the top-->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Reserve a table</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+  
+                  <!--Body of the modal, this has an entry form that contains feilds for name, contact information for if there are any issues about their reservation, a selector for number of people, and a time selector-->
+                  <div class="modal-body">
+
+                    <!--Name for the reservation which is required-->
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-floating">
+                          <input class="form-control" id="reservationName" type="text" placeholder="Reservation Name" data-sb-validations="required" />
+                          <label for="reservationName">Reservation Name</label>
+                          <div class="invalid-feedback" data-sb-feedback="reservationName:required">Reservation Name is required.</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Email which is required for confirmation of reservation email and possible issues with reservation booking-->
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-floating">
+                          <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="email,required" />
+                          <label for="emailAddress">Email Address</label>
+                          <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required for confirmaiton.</div>
+                          <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address is not valid.</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col">
+                      <!--Number of people in party selector-->
+                        <div class="form-floating">
+                          <select class="form-select" id="numberOfPeople" aria-label="Number of People">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                          <label for="numberOfPeople">Number of People</label>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                      <!--Time selector-->
+                        <div class="form-floating">
+                          <select class="form-select" id="time">
+                            <option>4:00 PM</option>
+                            <option>4:30 PM</option>
+                            <option>5:00 PM</option>
+                            <option>5:30 PM</option>
+                            <option>6:00 PM</option>
+                            <option>6:30 PM</option>
+                            <option>7:00 PM</option>
+                            <option>7:30 PM</option>
+                          </select>
+                          <label for="time">Time</label>
+                        </div>
+                      </div>
+                  </div>
+
+                  <!--modal footer-->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary ms-5 bd-highlight d-inline-block reserve-btn" data-bs-dismiss="modal">Reserve</button>
+                    <button type="button" class="btn btn-secondary ms-5 bd-highlight d-inline-block button-color" data-bs-dismiss="modal">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+          <!--Friday-->
+          <div class="modal" id="fri-reservation">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+
+                <!-- Modal Header, sets up the title and exit cross button along the top-->
+                <div class="modal-header">
+                  <h4 class="modal-title">Reserve a table</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--Body of the modal, this has an entry form that contains feilds for name, contact information for if there are any issues about their reservation, a selector for number of people, and a time selector-->
+                <div class="modal-body">
+
+                  <!--Name for the reservation which is required-->
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-floating">
+                        <input class="form-control" id="reservationName" type="text" placeholder="Reservation Name" data-sb-validations="required" />
+                        <label for="reservationName">Reservation Name</label>
+                        <div class="invalid-feedback" data-sb-feedback="reservationName:required">Reservation Name is required.</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Email which is required for confirmation of reservation email and possible issues with reservation booking-->
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-floating">
+                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="email,required" />
+                        <label for="emailAddress">Email Address</label>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address is not valid.</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                    <!--Number of people in party selector-->
+                      <div class="form-floating">
+                        <select class="form-select" id="numberOfPeople" aria-label="Number of People">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                        <label for="numberOfPeople">Number of People</label>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                    <!--Time selector-->
+                      <div class="form-floating">
+                        <select class="form-select" id="time">
+                          <option>5:00 PM</option>
+                          <option>5:30 PM</option>
+                          <option>6:00 PM</option>
+                          <option>6:30 PM</option>
+                          <option>7:00 PM</option>
+                          <option>7:30 PM</option>
+                          <option>8:00 PM</option>
+                          <option>8:30 PM</option>
+                          <option>9:00 PM</option>
+                          <option>9:30 PM</option>
+                        </select>
+                        <label for="time">Time</label>
+                      </div>
+                    </div>
+                </div>
+
+                <!--modal footer-->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary ms-5 bd-highlight d-inline-block reserve-btn" data-bs-dismiss="modal">Reserve</button>
+                  <button type="button" class="btn btn-secondary ms-5 bd-highlight d-inline-block button-color" data-bs-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!--Weekend-->
+          <div class="modal" id="end-reservation">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+
+                <!-- Modal Header, sets up the title and exit cross button along the top-->
+                <div class="modal-header">
+                  <h4 class="modal-title">Reserve a table</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--Body of the modal, this has an entry form that contains feilds for name, contact information for if there are any issues about their reservation, a selector for number of people, and a time selector-->
+                <div class="modal-body">
+
+                  <!--Name for the reservation which is required-->
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-floating">
+                        <input class="form-control" id="reservationName" type="text" placeholder="Reservation Name" data-sb-validations="required" />
+                        <label for="reservationName">Reservation Name</label>
+                        <div class="invalid-feedback" data-sb-feedback="reservationName:required">Reservation Name is required.</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Email which is required for confirmation of reservation email and possible issues with reservation booking-->
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-floating">
+                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="email,required" />
+                        <label for="emailAddress">Email Address</label>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address is not valid.</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                    <!--Number of people in party selector-->
+                      <div class="form-floating">
+                        <select class="form-select" id="numberOfPeople" aria-label="Number of People">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                        <label for="numberOfPeople">Number of People</label>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                    <!--Time selector-->
+                      <div class="form-floating">
+                        <select class="form-select" id="time">
+                          <option>10:00 AM</option>
+                          <option>10:30 AM</option>
+                          <option>11:00 AM</option>
+                          <option>11:30 AM</option>
+                          <option>12:00 PM</option>
+                          <option>12:30 PM</option>
+                          <option>1:00 PM</option>
+                          <option>1:30 PM</option>
+                          <option>2:00 PM</option>
+                          <option>2:30 PM</option>
+                          <option>3:00 PM</option>
+                          <option>3:30 PM</option>
+                          <option>4:00 PM</option>
+                          <option>4:30 PM</option>
+                          <option>5:00 PM</option>
+                          <option>5:30 PM</option>
+                          <option>6:00 PM</option>
+                          <option>6:30 PM</option>
+                          <option>7:00 PM</option>
+                          <option>7:30 PM</option>
+                          <option>8:00 PM</option>
+                          <option>8:30 PM</option>
+                        </select>
+                        <label for="time">Time</label>
+                      </div>
+                    </div> 
+                  </div>                 
+                    
+                    <div class="row">
+
+                    </div>
+                  
+
+                <!--modal footer-->
+                <div class="modal-footer">                  
+                     <!-- <div class="col text-center">
+                        <div id="sucess" class="alert alert-success alert-dismissible collapse">
+                          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                          <strong>Success!</strong> Your reservation has been made. Please check your email for confirmation.
+                        </div>
+                      </div> -->
+                  <button type="button" class="btn btn-secondary ms-5 bd-highlight d-inline-block reserve-btn" data-bs-dismiss="modal">Reserve</button>
+                  <button type="button" class="btn btn-secondary ms-5 bd-highlight d-inline-block button-color" data-bs-dismiss="modal">Cancel</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </main>
+
+
   <!-- Footer -->
 <footer class="text-center nav-color text-lg-start text-light common-font">
   <!-- Section: Social media -->
