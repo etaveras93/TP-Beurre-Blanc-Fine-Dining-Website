@@ -161,7 +161,11 @@ body{
   background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
 }
 
+<<<<<<< HEAD
 /*Section for the reservation calendar*/
+=======
+/* ------------Section for the reservation calendar------------ */
+>>>>>>> 2a148d7d639a515dcd39092b43b87dcc8bd227dd
 .calendar{
   margin: 20px;
 }
@@ -171,7 +175,10 @@ body{
   background-color: #36454f;
   font-size: 40px;
   color: aliceblue;
+<<<<<<< HEAD
   border-bottom: 6px solid #6d702c;
+=======
+>>>>>>> 2a148d7d639a515dcd39092b43b87dcc8bd227dd
 }
 
 /*changes the box background to a darker color when hovering over the calendar arrows to show interactibility. But there is none at the moment*/
@@ -183,19 +190,33 @@ body{
 /*styles the days of the week row of the calendar*/
 .calendar .calendar-week{
   background-color: #36454f22;
+<<<<<<< HEAD
   font-size: 1.5rem !important;
+=======
+  font-size: 1.5vm !important;
+>>>>>>> 2a148d7d639a515dcd39092b43b87dcc8bd227dd
 }
 
 /*sets the font size of the dates, changes the height of the rows for the days, and makes the number centered within the grid*/
 .calendar .calendar-days{
+<<<<<<< HEAD
   font-size: 1.5rem;
   height: 5rem;
   line-height: 5rem;
+=======
+  font-size: 10vm;
+  height: 65vm;
+  line-height: 65vm;
+>>>>>>> 2a148d7d639a515dcd39092b43b87dcc8bd227dd
 }
 
 .calendar .calendar-days .btn{
   font-family: Quicksand !important;
+<<<<<<< HEAD
   font-size: 1.5rem !important;
+=======
+  font-size: 1.5vw !important;
+>>>>>>> 2a148d7d639a515dcd39092b43b87dcc8bd227dd
   margin-top: .5rem;
 }
 
@@ -222,7 +243,11 @@ These include days the store is closed, not open for reservations, a past day, o
 }
 
 
+<<<<<<< HEAD
 /*Modal reservation section*/
+=======
+/*-------Modal reservation section-----------*/
+>>>>>>> 2a148d7d639a515dcd39092b43b87dcc8bd227dd
 .reserve-btn{
     background-color: #d5f2f2 !important;
     color: #252f35 !important;
@@ -235,6 +260,7 @@ These include days the store is closed, not open for reservations, a past day, o
 
 /*Sizing for screens for the calendar*/
 @media only screen and (max-width: 770px) {
+<<<<<<< HEAD
   .calendar .calendar-week{
     font-size: 1rem !important;
   }
@@ -271,6 +297,14 @@ These include days the store is closed, not open for reservations, a past day, o
     font-size: .8rem !important;
     padding: .2% !important;
     margin-top: .3rem;
+=======
+  .calendar .calendar-hide{
+    display: none;
+  }
+
+  .calendar-height{
+    height: 31rem !important;
+>>>>>>> 2a148d7d639a515dcd39092b43b87dcc8bd227dd
   }
 }
 
